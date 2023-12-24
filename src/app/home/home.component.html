@@ -1,0 +1,9 @@
+<div ngClass="home-component">
+    <div ngClass="main-headlines">
+        <h2>Hello, I am David</h2>
+        <h1>Front-end web developer</h1>
+    </div>
+    <h2 ngClass="animated-typewriter">I make cool websites!</h2>
+    <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+        (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+</div>

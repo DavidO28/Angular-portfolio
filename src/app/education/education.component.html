@@ -1,0 +1,13 @@
+<div ngClass="education-component">
+    <div ngClass="education-texts">
+        <img src="assets/education-images/tsu-logo.png" alt="tsu">
+        <p>I have studied and graduated from Tbilisi state university, I have always had tendency to like languages and
+            learn them very easily. I have got bachelor's degree in English philology and my level of English is C1.</p>
+        <img src="assets/education-images/itvet-logo.png" alt="itvet">
+        <p>After graduating, I started studying Web development, because I always liked messing around with computer,
+            technologies was part of my interest from the very childhood.</p>
+    </div>
+    <div ngClass="education-images">
+        <img ngClass="skill-icon" *ngFor="let image of Skillimages; let i = index" src={{image.image}}>
+    </div>
+</div>

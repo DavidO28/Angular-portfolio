@@ -1,0 +1,111 @@
+$black: #262626;
+$white: #d1cece;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  background-color: $white;
+  color: $black;
+}
+
+.home-component,
+.education-component,
+.projects-component,
+.contact-component {
+  padding: 0 1.5px;
+}
+
+// dark theme styles
+.dark-theme {
+  background-color: $black;
+  color: $white;
+
+  header nav h2 {
+    color:$white !important;
+  }
+
+  .theme-switcher {
+    border: 2px solid $white !important;
+  }
+
+  .home-component {
+    color: $white !important;
+  }
+
+  .projects-component {
+    color: $white !important;
+  }
+
+  .projects-component h2 {
+    -webkit-text-stroke: 1.5px $white !important;
+  }
+
+  // projects
+  .project-box-left,
+  .project-box-right {
+    border: 2px solid $white !important;
+    color: $white !important;
+
+    a,
+    h3 {
+      background-color: $black !important;
+
+      &:hover {
+        background-color: greenyellow !important;
+        color: $black !important;
+      }
+    }
+
+    h3 {
+      color: $white !important;
+    }
+  }
+
+  .projects ul,
+  li,
+  a {
+    color: $white !important;
+    border-color: $white !important;
+  }
+
+  .line {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  // burger menu
+  .menu_icon span {
+    background: $white !important;
+  }
+
+  @media only screen and (max-width:768px) {
+    .menuClass {
+      background-color: $black !important;
+      color: $white !important;
+    }
+  }
+
+  .education-component {
+    color: $white !important;
+  }
+
+  // page load animation styles
+  .browser-window,
+  .browser-window2 {
+    color: $white;
+  }
+
+  .browser-window::before,
+  .browser-window::after {
+    background-color: $white !important;
+  }
+
+  .browser-window2::before,
+  .browser-window2::after {
+    background-color: $white !important;
+  }
+
+}

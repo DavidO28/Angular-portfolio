@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  background-color: #d1cece;
+  color: #262626;
+}
+
+.home-component,
+.education-component,
+.projects-component,
+.contact-component {
+  padding: 0 1.5px;
+}
+
+.dark-theme {
+  background-color: #262626;
+  color: #d1cece;
+}
+.dark-theme header nav h2 {
+  color: #d1cece !important;
+}
+.dark-theme .theme-switcher {
+  border: 2px solid #d1cece !important;
+}
+.dark-theme .home-component {
+  color: #d1cece !important;
+}
+.dark-theme .projects-component {
+  color: #d1cece !important;
+}
+.dark-theme .projects-component h2 {
+  -webkit-text-stroke: 1.5px #d1cece !important;
+}
+.dark-theme .project-box-left,
+.dark-theme .project-box-right {
+  border: 2px solid #d1cece !important;
+  color: #d1cece !important;
+}
+.dark-theme .project-box-left a,
+.dark-theme .project-box-left h3,
+.dark-theme .project-box-right a,
+.dark-theme .project-box-right h3 {
+  background-color: #262626 !important;
+}
+.dark-theme .project-box-left a:hover,
+.dark-theme .project-box-left h3:hover,
+.dark-theme .project-box-right a:hover,
+.dark-theme .project-box-right h3:hover {
+  background-color: greenyellow !important;
+  color: #262626 !important;
+}
+.dark-theme .project-box-left h3,
+.dark-theme .project-box-right h3 {
+  color: #d1cece !important;
+}
+.dark-theme .projects ul,
+.dark-theme li,
+.dark-theme a {
+  color: #d1cece !important;
+  border-color: #d1cece !important;
+}
+.dark-theme .line {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.dark-theme .menu_icon span {
+  background: #d1cece !important;
+}
+@media only screen and (max-width: 768px) {
+  .dark-theme .menuClass {
+    background-color: #262626 !important;
+    color: #d1cece !important;
+  }
+}
+.dark-theme .education-component {
+  color: #d1cece !important;
+}
+.dark-theme .browser-window,
+.dark-theme .browser-window2 {
+  color: #d1cece;
+}
+.dark-theme .browser-window::before,
+.dark-theme .browser-window::after {
+  background-color: #d1cece !important;
+}
+.dark-theme .browser-window2::before,
+.dark-theme .browser-window2::after {
+  background-color: #d1cece !important;
+}/*# sourceMappingURL=styles.css.map */

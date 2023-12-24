@@ -1,0 +1,15 @@
+<div ngClass="projects-component">
+    <div ngClass="lines">
+        <div ngClass="line"></div>
+    </div>
+
+    <div ngClass="project-boxes">
+        <div [ngStyle]="{'background-image': 'url(' + link.img + ')'}" *ngFor="let link of projects; let i = index"
+            [ngClass]="{'project-box-left': i % 2 === 0, 'project-box-right': i % 2 !== 0}">
+            <h3>{{link.name}}</h3>
+            <a [href]="link.Livelink" target="_blank"> Live demo</a>
+            <a [href]="link.Codelink" target="_blank"> Code</a>
+        </div>
+    </div>
+  
+</div>

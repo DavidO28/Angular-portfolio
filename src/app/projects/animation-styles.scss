@@ -1,0 +1,135 @@
+   // line animation
+   .lines {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+    z-index: -1;
+
+    .line {
+        position: absolute;
+        width: 7px;
+        height: 370%;
+        top: 0;
+        left: calc(50% - 3.5px);
+        background: $black;
+        overflow: hidden;
+        border: 2px solid black;
+
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            top: -50%;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+            animation: drop 10s 0s infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+        }
+
+    }
+
+    @keyframes drop {
+        0% {
+            top: -50%;
+        }
+
+        100% {
+            top: 380%;
+        }
+    }
+}
+    // project boxes
+    .project-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .project-box-left,
+        .project-box-right {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            margin: 20px 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid $black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            a,
+            h3 {
+                text-decoration: none;
+                color: $black;
+                background-color: $white;
+                display: none;
+                padding: 5px;
+                border-radius: 5px;
+                width: fit-content;
+                margin: 10px 0;
+                font-size: xx-large;
+
+                &:hover {
+                    background-color: greenyellow;
+                }
+            }
+
+            h3 {
+                display: initial;
+            }
+
+            &:hover a {
+                display: block;
+            }
+
+            &:hover h3 {
+                display: none;
+            }
+
+        }
+
+        .project-box-left {
+            animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                transform: translateX(-1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(-30px);
+                opacity: 1;
+            }
+        }
+
+        .project-box-right {
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            transform: translateX(30px);
+        }
+
+        @keyframes slide-in-right {
+            0% {
+                transform: translateX(1000px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(30px);
+                opacity: 1;
+            }
+        }
+    }

@@ -1,0 +1,57 @@
+@import '../../styles.scss';
+
+.education-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $black;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0 30px;
+
+    .education-texts {
+        >* {
+            margin: 7px 0;
+        }
+
+        text-align: center;
+
+        img {
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+        }
+    }
+
+    .education-texts,
+    .education-images {
+        width: 50%;
+    }
+
+    .education-images {
+        width: 315px;
+
+        img {
+            margin: 2px;
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .education-component {
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+    }
+
+    .education-texts,
+    .education-images {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

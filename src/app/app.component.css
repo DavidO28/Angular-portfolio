@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  background-color: #d1cece;
+  color: #262626;
+}
+
+.home-component,
+.education-component,
+.projects-component,
+.contact-component {
+  padding: 0 1.5px;
+}
+
+.dark-theme {
+  background-color: #262626;
+  color: #d1cece;
+}
+.dark-theme .theme-switcher {
+  border: 2px solid #d1cece !important;
+}
+.dark-theme .home-component {
+  color: #d1cece !important;
+}
+.dark-theme .projects-component {
+  color: #d1cece !important;
+}
+.dark-theme .projects-component h2 {
+  -webkit-text-stroke: 1.5px #d1cece !important;
+}
+.dark-theme .projects ul,
+.dark-theme li,
+.dark-theme a {
+  color: #d1cece !important;
+  border-color: #d1cece !important;
+}
+.dark-theme .menu_icon span {
+  background: #d1cece !important;
+}
+@media only screen and (max-width: 768px) {
+  .dark-theme .menuClass {
+    background-color: #262626 !important;
+    color: #d1cece !important;
+  }
+}
+.dark-theme .browser-window,
+.dark-theme .browser-window2 {
+  color: #d1cece;
+}
+.dark-theme .browser-window::before,
+.dark-theme .browser-window::after {
+  background-color: #d1cece !important;
+}
+.dark-theme .browser-window2::before,
+.dark-theme .browser-window2::after {
+  background-color: #d1cece !important;
+}
+
+.app-component {
+  animation: scale-in-center 0.5s;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=app.component.css.map */

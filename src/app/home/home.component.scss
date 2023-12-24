@@ -1,0 +1,50 @@
+@import '../../styles.scss';
+
+.home-component {
+    overflow: hidden;
+    color: $black;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    // headline and animation
+    .main-headlines {
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            user-select: none;
+    }
+
+    @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+    .animated-typewriter {
+        user-select: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-transform: uppercase;
+        animation: typewriter 5s steps(44) 2.5s normal both;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 24em;
+        }
+    }
+
+}
