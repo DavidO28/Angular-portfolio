@@ -12,7 +12,7 @@
     .line {
         position: absolute;
         width: 7px;
-        height: 370%;
+        height: 2700px;
         top: 0;
         left: calc(50% - 3.5px);
         background: $black;
@@ -42,7 +42,7 @@
         }
 
         100% {
-            top: 380%;
+            top: 2710px;
         }
     }
 }
